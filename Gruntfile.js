@@ -74,7 +74,7 @@ module.exports = function(grunt) {
 
       theme: {
         files: 'src/less/**/*.less',
-        tasks: 'less:compileTheme'
+        tasks: 'less'
       }
     }
   });

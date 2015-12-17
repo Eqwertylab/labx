@@ -2,10 +2,104 @@
 // Основное
 // --------------------------------------------------
 
-html {
+html
+{
   font-size: 75%;
 }
 
-body {
 
+
+//
+// Заголовок
+// --------------------------------------------------
+
+.head
+{
+  padding-top: 30px;
+  padding-bottom: 55px;
+
+  background-color: @brand-primary;
+  background-image: url(../img/header__background.jpg);
+  background-repeat: no-repeat;
+  background-position: center 4px;
+  background-size: cover;
+  &__container
+  {
+    position: relative;
+  }
+  &__logo
+  {
+    text-align: center;
+    > span
+    {
+      font-size: 23px;
+      font-weight: 500;
+
+      display: inline-block;
+
+      color: #fff;
+      border-bottom: 3px solid #fff;
+    }
+  }
+  &__desc
+  {
+    max-width: 645px;
+    margin: 25px auto 0;
+
+    text-align: center;
+
+    color: #fff;
+  }
+  &__action
+  {
+    margin-top: 30px;
+
+    text-align: center;
+  }
+  &__nav
+  {
+    text-align: center;
+    > li
+    {
+      display: inline-block;
+      > a
+      {
+        position: relative;
+
+        display: block;
+
+        padding: @nav-link-padding;
+
+        text-transform: uppercase;
+
+        color: #818288;
+        &:hover,
+        &:focus
+        {
+          text-decoration: none;
+
+          color: #fff;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+
+
+h1
+{
+  font-size: 2.1875rem;
+  line-height: 1.2;
+
+  margin-top: 27px;
+
+  text-align: center;
+
+  color: #fff;
+  > span
+  {
+    color: @brand-primary;
+  }
 }

@@ -32,6 +32,8 @@
     "jquery": ">= 1.9.1"
   },
   "devDependencies": {
-    "bootstrap": "~3.3.6"
+    "bootstrap": "~3.3.6",
+    "jquery-validation": "~1.14.0",
+    "jquery-form": "~3.46.0"
   }
 }
