@@ -1,10 +1,92 @@
-@media (min-width: @screen-sm-min) {
-
+@media (min-width: @screen-sm-min)
+{
   //
   // Основное
   // --------------------------------------------------
-  html {
+  html
+  {
     font-size: 80%;
   }
 
+  .btn
+  {
+    .button-size(14px; 34px; @font-size-base; @line-height-base; @btn-border-radius-base);
+  }
+
+
+
+  //
+  // Заголовок
+  // --------------------------------------------------
+
+  .head
+  {
+    padding-top: 45px;
+    padding-bottom: 8.3125rem;
+    &__desc
+    {
+      margin: 2.8125rem auto 0;
+    }
+    &__action
+    {
+      margin-top: 4.6875rem;
+    }
+  }
+
+
+
+  h1
+  {
+    margin-top: 6.625rem;
+  }
+
+
+
+  //
+  // Как это работает
+  // --------------------------------------------------
+
+  .how
+  {
+    &__item
+    {
+      & + &
+      {
+        margin-top: 0;
+      }
+    }
+    &__action
+    {
+      margin-top: 5.3125rem;
+    }
+  }
+
+
+
+  //
+  // Кому подойдёт
+  // --------------------------------------------------
+
+  .who
+  {
+    &__item
+    {
+      height: 11.5625rem;
+    }
+    &__title
+    {
+      margin-top: 1.25rem;
+    }
+  }
+
+
+
+  //
+  // Результаты
+  // --------------------------------------------------
+
+  .result
+  {
+
+  }
 }

@@ -1,6 +1,12 @@
 html {
   font-size: 75%;
 }
+.btn {
+  padding: 11px 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 50px;
+}
 .head {
   padding-top: 30px;
   padding-bottom: 55px;
@@ -12,6 +18,8 @@ html {
 }
 .head__container {
   position: relative;
+  width: auto;
+  max-width: 1355px;
 }
 .head__logo {
   text-align: center;
@@ -33,22 +41,25 @@ html {
   margin-top: 30px;
   text-align: center;
 }
-.head__nav {
+.h-nav {
   text-align: center;
 }
-.head__nav > li {
+.h-nav > .h-nav__item {
   display: inline-block;
 }
-.head__nav > li > a {
+.h-nav > .h-nav__item > a {
   position: relative;
   display: block;
   padding: 10px 15px;
   text-transform: uppercase;
   color: #818288;
 }
-.head__nav > li > a:hover,
-.head__nav > li > a:focus {
-  text-decoration: none;
+.h-nav > .h-nav__item > a:hover,
+.h-nav > .h-nav__item > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.h-nav > .h-nav__item_active > a {
   color: #fff;
   background-color: transparent;
 }
@@ -62,9 +73,205 @@ h1 {
 h1 > span {
   color: #6173f4;
 }
+h2 {
+  font-size: 2.1875rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: #313d49;
+}
+.how {
+  padding-top: 3.75rem;
+  padding-bottom: 5rem;
+}
+.how__row {
+  margin-top: 4.0625rem;
+}
+.how__ico {
+  margin: 0 auto;
+  border-radius: 4rem;
+  background-color: #f3f4fe;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 3.375rem;
+  width: 8rem;
+  height: 8rem;
+}
+.how__ico:hover {
+  background-color: #e5e7fd;
+}
+.how__ico_smile {
+  background-image: url(../img/how__ico-smile.png);
+}
+.how__ico_tube {
+  background-image: url(../img/how__ico-tube.png);
+}
+.how__ico_doc {
+  background-image: url(../img/how__ico-doc.png);
+}
+.how__title {
+  font-size: 1.0625rem;
+  margin-top: 1.6875rem;
+  text-align: center;
+  color: #313d49;
+}
+.how__inner {
+  max-width: 360px;
+  margin: 0 auto;
+}
+.how__item + .how__item {
+  margin-top: 35px;
+}
+.how__action {
+  margin-top: 30px;
+  text-align: center;
+}
+.who {
+  padding-top: 3.75rem;
+  padding-bottom: 2.5rem;
+  background-color: #eeeef2;
+}
+.who__row {
+  margin-top: 4.0625rem;
+}
+.who__item {
+  height: 115px;
+}
+.who__ico {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 5rem;
+  height: 3.5625rem;
+}
+.who__ico_phone {
+  background-image: url(../img/who__ico-phone.png);
+}
+.who__ico_cloud {
+  background-image: url(../img/who__ico-cloud.png);
+}
+.who__ico_taxi {
+  background-image: url(../img/who__ico-taxi.png);
+}
+.who__ico_percent {
+  background-image: url(../img/who__ico-percent.png);
+}
+.who__ico_truck {
+  background-image: url(../img/who__ico-truck.png);
+}
+.who__ico_query {
+  background-image: url(../img/how__ico-doc.png);
+}
+.who__title {
+  font-size: 1.0625rem;
+  line-height: 1.25;
+  margin-top: 12px;
+  text-align: center;
+}
+.result {
+  padding-top: 3.75rem;
+  padding-bottom: 5rem;
+  background-color: #6173f4;
+}
+.result__row {
+  margin-top: 3.75rem;
+}
+.result h2 {
+  color: #fff;
+}
+.result__item {
+  margin-bottom: 2.3125rem;
+}
+.result__inner {
+  border-radius: 4px;
+  background-color: #fff;
+  padding-bottom: 1.5rem;
+  max-width: 360px;
+  margin: auto;
+}
+.result__logo {
+  height: 6.5625rem;
+  border-bottom: 1px solid #e7e7e7;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 17rem 5.3125rem;
+}
+.result__logo_uber {
+  background-image: url(../img/result__logo-uber.jpg);
+}
+.result__logo_sber {
+  background-image: url(../img/result__logo-sber.jpg);
+}
+.result__logo_mnogo {
+  background-image: url(../img/result__logo-mnogo.jpg);
+}
+.result__logo_admitad {
+  background-image: url(../img/result__logo-admitad.jpg);
+}
+.result__logo_taxi {
+  background-image: url(../img/result__logo-gettaxi.jpg);
+}
+.result__logo_netologia {
+  background-image: url(../img/result__logo-netologia.jpg);
+}
+.result__title {
+  margin-top: 1.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000;
+}
+.result__desc {
+  margin-top: 1.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: #7c8185;
+}
+.result__tool {
+  margin-top: 1.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.result__more {
+  text-transform: uppercase;
+}
 @media (min-width: 768px) {
   html {
     font-size: 80%;
+  }
+  .btn {
+    padding: 14px 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 50px;
+  }
+  .head {
+    padding-top: 45px;
+    padding-bottom: 8.3125rem;
+  }
+  .head__desc {
+    margin: 2.8125rem auto 0;
+  }
+  .head__action {
+    margin-top: 4.6875rem;
+  }
+  h1 {
+    margin-top: 6.625rem;
+  }
+  .how__item + .how__item {
+    margin-top: 0;
+  }
+  .how__action {
+    margin-top: 5.3125rem;
+  }
+  .who__item {
+    height: 11.5625rem;
+  }
+  .who__title {
+    margin-top: 1.25rem;
   }
 }
 @media (min-width: 992px) {
@@ -73,8 +280,14 @@ h1 > span {
   }
   .head__logo {
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 0;
+  }
+  .result__desc {
+    font-size: 0.9375rem;
+  }
+  .result__more {
+    font-size: 0.9375rem;
   }
 }
 @media (min-width: 1200px) {

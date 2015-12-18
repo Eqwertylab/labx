@@ -26,81 +26,182 @@
 
     <header class="head">
       
-      <div class="container head__container">
+      <div class="container-fluid head__container">
         
         <div class="head__logo"><span>LIVE LAB</span></div>
 
-        <ul class="nav hidden-xs hidden-sm head__nav">
-          <li class="active"><a href="#">Как это работает</a></li>
-          <li><a href="#">В зоне риска</a></li>
-          <li><a href="#">Результаты</a></li>
-          <li><a href="#">Тарифы</a></li>
-          <li><a href="#">Пресса</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="nav hidden-xs hidden-sm h-nav">
+          <li class="h-nav__item h-nav__item_active"><a href="#">Как это работает</a></li>
+          <li class="h-nav__item"><a href="#">В зоне риска</a></li>
+          <li class="h-nav__item"><a href="#">Результаты</a></li>
+          <li class="h-nav__item"><a href="#">Тарифы</a></li>
+          <li class="h-nav__item"><a href="#">Пресса</a></li>
+          <li class="h-nav__item"><a href="#">Контакты</a></li>
         </ul>
 
         <h1><span>Исключительно живое</span> <br>тестирование вашего продукта</h1>
         <div class="head__desc">Вы раздаете бонусы для привлечения клиентов, а этим злоупотребляют любители халявы? Наши эксперты найдут слабые места в ваших сценариях и дадут рекомендации по их защите.</div>
         <div class="head__action">
-          <button class="btn btn-primary">ПОПРОБОВАТЬ</button>
+          <a href="#" class="btn btn-primary">ПОПРОБОВАТЬ</a>
         </div>
       </div>
     </header>
-    <!-- Modal -->
-    <div class="modal fade" id="modal-order" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-md" role="document">
-        <form class="modal-content" id="form-modal-order" action="action.php" method="get">
 
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="modal-order-title">Связаться с нами</h4>
-          </div>
+    <div class="how">
 
-          <div class="modal-body">
+      <div class="container">
+        
+        <h2>Как это работает?</h2>
 
-            <div class="form-group">
-              <label for="name">Представьтесь пожалуйста</label>
-              <input type="text" name="name" class="form-control" placeholder="Иванов Иван">
-            </div>
-
-            <div class="form-group">
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" class="form-control" placeholder="+7 (123) 456-78-90">
+        <div class="row how__row">
+          <div class="col-sm-4 how__item">
+            <div class="how__inner">
+              <div class="how__ico how__ico_smile"></div>
+              <div class="how__title">Вы понимаете, что вашей лояльностью злоупротребляют, и хотите сэкономить на маркетинге, но не потерять поток клиентов</div>
             </div>
           </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-            <button type="submit" class="btn btn-danger">Перезвонить мне</button>
+          <div class="col-sm-4 how__item">
+            <div class="how__inner">
+              <div class="how__ico how__ico_tube"></div>
+              <div class="how__title">Обращаетесь к нам. Наши специалисты проводят профессиональный анализ вашего продукта, тестируют все пользовательские кейсы.</div>
+            </div>
           </div>
-        </form>
+          <div class="col-sm-4 how__item">
+            <div class="how__inner">
+              <div class="how__ico how__ico_doc"></div>
+              <div class="how__title">Вы получаете детальный отчет и видите свои слабые стороны, исправляете их, начинаете экономить.</div>
+            </div>
+          </div>
+          <div class="how__arrow how__arrow_one"></div>
+          <div class="how__arrow how__arrow_two"></div>
+        </div>
+
+        <div class="how__action">
+          <a href="#" class="btn btn-primary">ПОПРОБОВАТЬ</a>
+        </div>
       </div>
     </div>
 
-    <!-- Response -->
-    <div class="modal fade" id="modal-response" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-md" role="document">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="modal-response-title"><!-- response.title --></h4>
+    <div class="who">
+      
+      <div class="container">
+        
+        <h2>В зоне риска</h2>
+        
+        <div class="row who__row">
+          
+          <div class="col-xs-6 col-sm-4 who__item">
+            <div class="who__inner">
+              <div class="who__ico who__ico_phone"></div>
+              <div class="who__title">Мобильное приложение</div>
+            </div>
           </div>
-
-          <div class="modal-body" id="modal-response-body">
-            <!-- response.content -->
+          <div class="col-xs-6 col-sm-4 who__item">
+            <div class="who__inner">
+              <div class="who__ico who__ico_cloud"></div>
+              <div class="who__title">Любой облачный сервис</div>
+            </div>
           </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+          <div class="col-xs-6 col-sm-4 who__item">
+            <div class="who__inner">
+              <div class="who__ico who__ico_taxi"></div>
+              <div class="who__title">Такси, доставка еды, и так далее</div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 who__item">
+            <div class="who__inner">
+              <div class="who__ico who__ico_percent"></div>
+              <div class="who__title">Бонусная или партнерская программа</div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 who__item">
+            <div class="who__inner">
+              <div class="who__ico who__ico_truck"></div>
+              <div class="who__title">Интернет-магазин</div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 who__item">
+            <div class="who__inner">
+              <div class="who__ico who__ico_query"></div>
+              <div class="who__title">Не нашли свой тип бизнеса? <br><a href="">Предложить свой проект</a></div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="result">
+      
+      <div class="container">
+        
+        <h2>Результаты наших проверок</h2>
+
+        <div class="row result__row">
+          
+          <div class="col-sm-6 col-md-4 result__item">
+            <div class="result__inner">
+              <div class="result__logo result__logo_uber"></div>
+              <div class="result__title">Не хотите платить за такси? Это возможно</div>
+              <div class="result__desc">Если у вас есть 2 смартфона и вы живете в мегаполисе, то можете обзавестись личным водителем бесплатно</div>
+              <div class="result__tool"><a href="" class="result__more">Подробнее</a></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 result__item">
+            <div class="result__inner">
+              <div class="result__logo result__logo_sber"></div>
+              <div class="result__title">Как заработать 30.000 спасибо за месяц</div>
+              <div class="result__desc">Оказывается можно неплохо зарабатывать, имея карту сбербанка и немного смекалки. всего пару часов вашего времени в день и 30.000 у вас в кармане</div>
+              <div class="result__tool"><a href="" class="result__more">Подробнее</a></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 result__item">
+            <div class="result__inner">
+              <div class="result__logo result__logo_mnogo"></div>
+              <div class="result__title">Как купить айфон 6, не вставая с дивана</div>
+              <div class="result__desc">Все очень просто. Достаточно иметь аккаунт в системе Mnogo.ru и привлекать рефералов. Счастье в том, что процесс можно автоматизировать.</div>
+              <div class="result__tool"><a href="" class="result__more">Подробнее</a></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 result__item">
+            <div class="result__inner">
+              <div class="result__logo result__logo_admitad"></div>
+              <div class="result__title">Как без площадки и трафика зарабатывать в CPA?</div>
+              <div class="result__desc">Достаточно убедить систему в том, что и площадка, и трафик есть. А дальше ловкость рук</div>
+              <div class="result__tool"><a href="" class="result__more">Подробнее</a></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 result__item">
+            <div class="result__inner">
+              <div class="result__logo result__logo_taxi"></div>
+              <div class="result__title">Нет поблизости Uber? Gett выручит</div>
+              <div class="result__desc">С Gett ситуация чуть сложнее, чем с Uber. Но тоже поддается ловкости рук</div>
+              <div class="result__tool"><a href="" class="result__more">Подробнее</a></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 result__item">
+            <div class="result__inner">
+              <div class="result__logo result__logo_netologia"></div>
+              <div class="result__title">Стать гуру интернет маркетинга можно бесплатно</div>
+              <div class="result__desc">Все что для этого потребуется - немного вашего времени и конечно желание. Система очень простая</div>
+              <div class="result__tool"><a href="" class="result__more">Подробнее</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result__action">
+          <a href="#" class="btn btn-white">ПРОВЕРИТЬ СВОЙ СЕРВИС</a>
+          <a href="#" class="btn btn-trans">ВСЕ КЕЙСЫ</a>
+        </div>          
       </div>
     </div>
 
     <!-- build:js js/script.js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/bootstrap/js/modal.js"></script>
     <script src="../bower_components/jquery-validation/dist/jquery.validate.js"></script>
     <script src="../bower_components/jquery-form/jquery.form.js"></script>
     <!-- <script src="js/order.js"></script>  -->
