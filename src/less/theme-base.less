@@ -358,5 +358,51 @@ h2
   &__more
   {
     text-transform: uppercase;
+    font-weight: 500;
+  }
+  &__action
+  {
+    text-align: center;
+
+    .btn + .btn
+    {
+      margin-left: 15px;
+    }
+  }
+}
+
+
+
+//
+// Кнопки
+// --------------------------------------------------
+
+.btn-white 
+{
+  .button-variant(@brand-primary; #fff; #fff);
+}
+
+.btn-trans 
+{
+  .button-variant(#fff; transparent; #fff);
+}
+
+
+
+//
+// Кнопки
+// --------------------------------------------------
+
+.tarif
+{
+  padding-top: @sector-padding-top;
+  padding-bottom: @sector-padding-bottom;
+  
+  background: #1b1f38;
+  color: #fff;
+
+  h2 
+  {
+    color: #fff;
   }
 }
