@@ -243,7 +243,7 @@ h2 {
   text-align: center;
 }
 .result__action .btn + .btn {
-  margin-left: 15px;
+  margin-top: 15px;
 }
 .btn-white {
   color: #6173f4;
@@ -359,14 +359,104 @@ fieldset[disabled] .btn-trans.focus {
   color: transparent;
   background-color: #ffffff;
 }
+.btn-contrast {
+  color: #1b1f38;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-contrast:focus,
+.btn-contrast.focus {
+  color: #1b1f38;
+  background-color: #e6e6e6;
+  border-color: #bfbfbf;
+}
+.btn-contrast:hover {
+  color: #1b1f38;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
+}
+.btn-contrast:active,
+.btn-contrast.active,
+.open > .dropdown-toggle.btn-contrast {
+  color: #1b1f38;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
+}
+.btn-contrast:active:hover,
+.btn-contrast.active:hover,
+.open > .dropdown-toggle.btn-contrast:hover,
+.btn-contrast:active:focus,
+.btn-contrast.active:focus,
+.open > .dropdown-toggle.btn-contrast:focus,
+.btn-contrast:active.focus,
+.btn-contrast.active.focus,
+.open > .dropdown-toggle.btn-contrast.focus {
+  color: #1b1f38;
+  background-color: #d4d4d4;
+  border-color: #bfbfbf;
+}
+.btn-contrast:active,
+.btn-contrast.active,
+.open > .dropdown-toggle.btn-contrast {
+  background-image: none;
+}
+.btn-contrast.disabled:hover,
+.btn-contrast[disabled]:hover,
+fieldset[disabled] .btn-contrast:hover,
+.btn-contrast.disabled:focus,
+.btn-contrast[disabled]:focus,
+fieldset[disabled] .btn-contrast:focus,
+.btn-contrast.disabled.focus,
+.btn-contrast[disabled].focus,
+fieldset[disabled] .btn-contrast.focus {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-contrast .badge {
+  color: #ffffff;
+  background-color: #1b1f38;
+}
 .tarif {
   padding-top: 3.75rem;
   padding-bottom: 5rem;
   background: #1b1f38;
   color: #fff;
 }
+.tarif__row {
+  margin-top: 3.75rem;
+}
 .tarif h2 {
   color: #fff;
+}
+.tarif__item + .tarif__item {
+  margin-top: 20px;
+}
+.tarif__inner {
+  border-radius: 4px;
+  border: 1px solid #41455a;
+  padding-bottom: 2.125rem;
+}
+.tarif__title {
+  font-weight: 500;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #41455a;
+  margin: 0 15px;
+}
+.tarif__list {
+  margin: 1rem 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tarif__param {
+  padding: 0.6875rem 15px;
+}
+.tarif__tool {
+  text-align: center;
 }
 @media (min-width: 768px) {
   html {
@@ -413,9 +503,19 @@ fieldset[disabled] .btn-trans.focus {
     right: 0;
     bottom: 1.2rem;
   }
+  .result__action .btn + .btn {
+    margin-top: 0;
+    margin-left: 15px;
+  }
   .btn {
     font-weight: 500;
     font-size: 17px;
+  }
+  .tarif__item + .tarif__item {
+    margin-top: 0px;
+  }
+  .tarif__list {
+    font-size: 18px;
   }
 }
 @media (min-width: 992px) {

@@ -99,6 +99,14 @@
       right: 0;
       bottom: 1.2rem;
     }
+    &__action
+    {
+      .btn + .btn
+      {
+        margin-top: 0;
+        margin-left: 15px;
+      }
+    }
   }
 
 
@@ -110,5 +118,26 @@
   {
     font-weight: 500;
     font-size: 17px;
+  }
+
+
+
+  //
+  // Тариф
+  // --------------------------------------------------
+
+  .tarif
+  {
+    &__item
+    {
+      & + &
+      {
+        margin-top: 0px;
+      }
+    }
+    &__list
+    {
+      font-size: 18px;
+    }
   }
 }

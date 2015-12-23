@@ -366,7 +366,7 @@ h2
 
     .btn + .btn
     {
-      margin-left: 15px;
+      margin-top: 15px;
     }
   }
 }
@@ -387,10 +387,15 @@ h2
   .button-variant(#fff; transparent; #fff);
 }
 
+.btn-contrast
+{
+  .button-variant(#1b1f38; #fff; #fff);
+}
+
 
 
 //
-// Кнопки
+// Тариф
 // --------------------------------------------------
 
 .tarif
@@ -401,8 +406,51 @@ h2
   background: #1b1f38;
   color: #fff;
 
+  &__row
+  {
+    margin-top: 3.75rem;
+  }
   h2 
   {
     color: #fff;
+  }
+  &__item
+  {
+    & + &
+    {
+      margin-top: 20px;
+    }
+  }
+  &__inner
+  {
+    border-radius: 4px;
+    border: 1px solid #41455a;
+    padding-bottom: 2.125rem;
+  }
+  &__title
+  {
+    font-weight: 500;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #41455a;
+    margin: 0 15px;
+  }
+  &__list
+  {
+    margin: 1rem 0;
+    padding: 0;
+    list-style-type: none; 
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__param
+  {
+    padding: 0.6875rem 15px;
+  }
+  &__tool
+  {
+    text-align: center;
   }
 }
