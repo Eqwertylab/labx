@@ -51,6 +51,7 @@ html
   }
   &__desc
   {
+    font-size: 1.0625rem;
     max-width: 645px;
     margin: 25px auto 0;
 
@@ -283,6 +284,70 @@ h2
   {
     margin-top: 3.75rem;
   }
+
+  /* Слайдер*/
+  &__slider
+  {
+    margin-bottom: 2.3125rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination 
+  {
+    bottom: auto;
+    left: 0;
+    right: 0;
+    top: 25px;
+  }
+  .swiper-container
+  {
+    padding-top: 5.75rem;
+  }
+  .swiper-slide
+  {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .swiper-pagination-bullet-active
+  {
+    background: #fff; 
+  }
+  .swiper-button-prev,
+  .swiper-button-next
+  {
+    .size(20px, 30px);
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    top: 19px;
+  }
+  .swiper-button-prev
+  {
+    left: 0px;
+    background-position: left center;
+    background-image: url(../img/slider-prev.png);
+  }
+  .swiper-button-next
+  {
+    right: 0px;
+    background-position: right center;
+    background-image: url(../img/slider-next.png);
+  }
+  .swiper-button-wrap
+  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .swiper-button-inner
+  {
+    position: relative;
+    max-width: 360px;
+    margin: auto;
+  }
+  /* END <-- Слайдер */
+
   h2
   {
     color: #fff;
@@ -364,7 +429,7 @@ h2
   {
     text-align: center;
 
-    .btn + .btn
+    .btn-trans
     {
       margin-top: 15px;
     }
@@ -420,17 +485,49 @@ h2
     {
       margin-top: 20px;
     }
+
+    &_simple .tarif__title
+    {
+      color: #a3ff6b;
+    }
+
+    &_advanced .tarif__title
+    {
+      color: #f8ec33;
+    }
+
+    &_premium .tarif__title
+    {
+      color: #ff6666;
+    }
   }
   &__inner
   {
     border-radius: 4px;
     border: 1px solid #41455a;
     padding-bottom: 2.125rem;
+    max-width: 360px;
+    margin: auto;
+    position: relative;
+
+    &:hover
+    {
+      border-color: #fff;
+      .tarif__title
+      {
+        border-color: #fff;
+      }
+      // .btn-contrast
+      // {
+      //   background-color: #e6e6e6;
+      //   border-color: #e0e0e0;
+      // }
+    }
   }
   &__title
   {
     font-weight: 500;
-    padding: 2rem 0;
+    padding: 1.6rem 0;
     font-size: 1.5rem;
     text-align: center;
     border-bottom: 1px solid #41455a;
@@ -447,10 +544,307 @@ h2
   }
   &__param
   {
-    padding: 0.6875rem 15px;
+    padding: 0.5rem 15px;
   }
   &__tool
   {
     text-align: center;
+  }
+}
+
+
+
+//
+// СМИ о нас
+// --------------------------------------------------
+
+.smi
+{
+  padding-top: @sector-padding-top;
+  padding-bottom: @sector-padding-bottom;
+
+  background-color: #eeeef2;
+  
+  &__row
+  {
+    margin-top: 3.75rem;
+  }
+
+  &__item
+  {
+    font-size: 1.125rem;
+
+    &+&
+    {
+      margin-top: 24px;
+    }
+  }
+
+  &__inner
+  {
+    border-left: 1px solid #e1d4d5;
+    padding-left: 0.9375rem;
+    padding-top: 2.4375rem;
+    background-image: url(../img/say__quote.png);
+    background-repeat: no-repeat;
+    background-size: 20px 14px;
+    background-position: 0.9375rem 0;
+  } 
+
+  &__name
+  {
+    display: inline-block;
+    margin-top: 12px;
+  }
+}
+
+
+
+//
+// Контакты
+// --------------------------------------------------
+
+.contacts
+{
+  padding-top: @sector-padding-top;
+  padding-bottom: @sector-padding-bottom;
+  color: #262e37;
+  
+  &__container
+  {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 730px;
+  }
+
+  &__row
+  {
+    margin-top: 3.75rem;
+  }
+
+  &__title
+  {
+    font-size: 1.0625rem;
+    text-align: center;
+    color: #8e959c;
+  }
+  
+  &__email,
+  &__tel
+  {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  &__col:last-child
+  {
+    margin-top: 20px;
+  }
+
+  &__footer
+  {
+    text-align: center;
+    font-size: 1.125rem;
+    margin-top: 3.125rem;
+    color: #b7b7b7;
+  }
+}
+
+
+
+//
+// Форма 
+// --------------------------------------------------
+
+.form
+{
+  margin-top: 3.125rem;
+  border-top: 1px solid #e9e9e9;
+  padding-top: 1.875rem;
+  text-align: center;
+
+  &__form
+  {
+    max-width: 360px;
+    margin: auto;
+  }
+
+  &__title
+  {
+    text-align: center;
+    font-size: 1.0625rem;
+    color: #8e959c;
+  }
+
+  label
+  {
+    font-size: 1.0625rem;
+    font-weight: 400;
+  }
+
+  .form-group
+  {
+    margin: 1.375rem 0;
+  }
+
+  &__action
+  {
+    margin-top: 2.1875rem;
+  }
+  
+  &__error,
+  &__success
+  {
+    font-size: 1.0625rem;
+    display:none;
+  }
+}
+
+
+
+//
+// Ретина
+// --------------------------------------------------
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+
+
+  //
+  // Заголовок
+  // --------------------------------------------------
+
+  .head
+  {
+    background-image: url(../img/header__background@2x.jpg);
+  }
+
+
+
+  //
+  // Как это работает
+  // --------------------------------------------------
+
+  .how
+  {
+    &__ico
+    {
+      &_smile
+      {
+        background-image: url(../img/how__ico-smile@2x.png);
+      }
+      &_tube
+      {
+        background-image: url(../img/how__ico-tube@2x.png);
+      }
+      &_doc
+      {
+        background-image: url(../img/how__ico-doc@2x.png);
+      }
+    }
+  }
+
+
+
+  //
+  // Кому подойдёт
+  // --------------------------------------------------
+
+  .who
+  {
+    &__ico
+    {
+      &_phone
+      {
+        background-image: url(../img/who__ico-phone@2x.png);
+      }
+      &_cloud
+      {
+        background-image: url(../img/who__ico-cloud@2x.png);
+      }
+      &_taxi
+      {
+        background-image: url(../img/who__ico-taxi@2x.png);
+      }
+      &_percent
+      {
+        background-image: url(../img/who__ico-percent@2x.png);
+      }
+      &_truck
+      {
+        background-image: url(../img/who__ico-truck@2x.png);
+      }
+      &_query
+      {
+        background-image: url(../img/how__ico-doc@2x.png);
+      }
+    }
+  }
+
+
+
+  //
+  // Результаты
+  // --------------------------------------------------
+
+  .result
+  {
+    .swiper-button-prev
+    {
+      background-image: url(../img/slider-prev@2x.png);
+    }
+    .swiper-button-next
+    {
+      background-image: url(../img/slider-next@2x.png);
+    }
+    &__logo
+    {
+      &_uber
+      {
+        background-image: url(../img/result__logo-uber@2x.jpg);
+      }
+      &_sber
+      {
+        background-image: url(../img/result__logo-sber@2x.jpg);
+      }
+      &_mnogo
+      {
+        background-image: url(../img/result__logo-mnogo@2x.jpg);
+      }
+      &_admitad
+      {
+        background-image: url(../img/result__logo-admitad@2x.jpg);
+      }
+      &_taxi
+      {
+        background-image: url(../img/result__logo-gettaxi@2x.jpg);
+      }
+      &_netologia
+      {
+        background-image: url(../img/result__logo-netologia@2x.jpg);
+      }
+    }
+  }
+
+
+
+  //
+  // СМИ о нас
+  // --------------------------------------------------
+
+  .smi
+  {
+    &__inner
+    {
+      background-image: url(../img/say__quote@2x.png);
+    }
   }
 }

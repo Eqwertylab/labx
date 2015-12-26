@@ -101,7 +101,7 @@
     }
     &__action
     {
-      .btn + .btn
+      .btn-trans
       {
         margin-top: 0;
         margin-left: 15px;
@@ -134,10 +134,54 @@
       {
         margin-top: 0px;
       }
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+    &__inner
+    {
+      height: 440px;
     }
     &__list
     {
       font-size: 18px;
+    }
+    &__tool
+    {
+      position: absolute;
+      left: 0;
+      bottom: 33px;
+      right: 0;
+    }
+  }
+
+
+
+  //
+  // СМИ о нас
+  // --------------------------------------------------
+
+  .smi
+  {
+    &__item
+    {
+      &+&
+      {
+        margin-top: 0px;
+      }
+    }
+  }
+
+
+
+  //
+  // Контакты
+  // --------------------------------------------------
+
+  .contacts
+  {
+    &__col:last-child
+    {
+      margin-top: 0px;
     }
   }
 }

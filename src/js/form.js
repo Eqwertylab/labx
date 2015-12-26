@@ -1,7 +1,7 @@
 // 
 // Параметры валидации
 // -----------------------------------
-var order_form_validator = $("#form-modal-order").validate({
+var order_form_validator = $("#form").validate({
 
   rules: {
     name: "required",
@@ -42,8 +42,8 @@ var submit_options = {
     // other available options: 
     //url:       url         // override for form's 'action' attribute 
     //type:      type        // 'get' or 'post', override for form's 'method' attribute 
-    dataType:  'json',        // 'xml', 'script', or 'json' (expected server response type) 
-    //clearForm: true        // clear all form fields after successful submit 
+    dataType:  'text',       // 'xml', 'script', or 'json' (expected server response type) 
+    clearForm: true          // clear all form fields after successful submit 
     //resetForm: true        // reset the form after successful submit 
 
     // $.ajax options can be used here too, for example: 
@@ -56,27 +56,23 @@ var submit_options = {
 // -----------------------------------
 
 // Удачно
-function showResponse(responseJson, statusText, xhr, $form)  { 
+function showResponse(response, statusText, xhr, $form)  { 
+  
+  $('#form__submit').hide();  
 
-  setModalResponse(responseJson);
+  $('#form__success')
+    .text(response)
+    .show();  
 } 
 
 // Не удачно
 function showError() {
 
-  var data = {
-    title: 'Ошибка',
-    content: 'Ошибка отправки, пожалуйста позвоните по тел. 8 (800) 333-18-55'
-  }
+  $('#form__submit').hide();
 
-  setModalResponse(data)
-}
+  var response = 'Ошибка! Свяжитесь с нами по телефону.';
 
-function setModalResponse(data) {
-
-  $('#modal-response-title').text(data.title);
-  $('#modal-response-body').text(data.content);
-
-  $('#modal-order').modal('hide');
-  $('#modal-response').modal('show');
+  $('#form__error')
+    .text(response)
+    .show();  
 }
