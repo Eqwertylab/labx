@@ -439,6 +439,129 @@ h2
 
 
 //
+// Вы получите
+// --------------------------------------------------
+
+.youget
+{
+  padding-top: @sector-padding-top;
+  padding-bottom: @sector-padding-bottom;
+
+  background-color: @brand-primary;
+  &__row
+  {
+    margin-top: 6.25rem;
+  }
+
+  /* Слайдер*/
+  &__slider
+  {
+    margin-bottom: 2.3125rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination 
+  {
+    bottom: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+  }
+  .swiper-container
+  {
+    padding-top: 6.5rem;
+  }
+  .swiper-slide
+  {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .swiper-pagination-bullet-active
+  {
+    background: #fff; 
+  }
+  .swiper-button-prev,
+  .swiper-button-next
+  {
+    .size(20px, 30px);
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    top: 24px;
+  }
+  .swiper-button-prev
+  {
+    left: 0px;
+    background-position: left center;
+    background-image: url(../img/slider-prev.png);
+  }
+  .swiper-button-next
+  {
+    right: 0px;
+    background-position: right center;
+    background-image: url(../img/slider-next.png);
+  }
+  .swiper-button-wrap
+  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .swiper-button-inner
+  {
+    position: relative;
+    max-width: 360px;
+    margin: auto;
+  }
+  /* END <-- Слайдер */
+
+  h2
+  {
+    color: #fff;
+  }
+  &__inner
+  {
+    max-width: 360px;
+    margin: auto;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-position: center top; 
+    background-size: 156px 86px;
+    &_cashback {
+      background-image: url(../img/result__ico-cashback.png);
+    }
+    &_twotree {
+      background-image: url(../img/result__ico-twortree.png);
+    }
+    &_boosting {
+      background-image: url(../img/result__ico-grafik.png);
+    }
+  }
+  &__title
+  {
+    margin-top: @result-base-margin;
+    padding-left: @youget-base-padding;
+    padding-right: @youget-base-padding;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #cad0ff;
+    text-align: center; 
+    b {
+      color: #fff;
+      font-weight: 500; 
+    }
+  }
+  &__action
+  {
+    margin-top: 4.25rem;
+    text-align: center;
+  }
+}
+
+
+
+//
 // Кнопки
 // --------------------------------------------------
 

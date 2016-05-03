@@ -299,6 +299,104 @@ h2 {
 .result__action .btn-trans {
   margin-top: 15px;
 }
+.youget {
+  padding-top: 3.75rem;
+  padding-bottom: 5rem;
+  background-color: #6173f4;
+  /* Слайдер*/
+  /* END <-- Слайдер */
+}
+.youget__row {
+  margin-top: 6.25rem;
+}
+.youget__slider {
+  margin-bottom: 2.3125rem;
+}
+.youget .swiper-container-horizontal > .swiper-pagination {
+  bottom: auto;
+  left: 0;
+  right: 0;
+  top: 30px;
+}
+.youget .swiper-container {
+  padding-top: 6.5rem;
+}
+.youget .swiper-slide {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.youget .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.youget .swiper-button-prev,
+.youget .swiper-button-next {
+  width: 20px;
+  height: 30px;
+  background-size: 10px 15px;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  top: 24px;
+}
+.youget .swiper-button-prev {
+  left: 0px;
+  background-position: left center;
+  background-image: url(../img/slider-prev.png);
+}
+.youget .swiper-button-next {
+  right: 0px;
+  background-position: right center;
+  background-image: url(../img/slider-next.png);
+}
+.youget .swiper-button-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.youget .swiper-button-inner {
+  position: relative;
+  max-width: 360px;
+  margin: auto;
+}
+.youget h2 {
+  color: #fff;
+}
+.youget__inner {
+  max-width: 360px;
+  margin: auto;
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 156px 86px;
+}
+.youget__inner_cashback {
+  background-image: url(../img/result__ico-cashback.png);
+}
+.youget__inner_twotree {
+  background-image: url(../img/result__ico-twortree.png);
+}
+.youget__inner_boosting {
+  background-image: url(../img/result__ico-grafik.png);
+}
+.youget__title {
+  margin-top: 1.2rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #cad0ff;
+  text-align: center;
+}
+.youget__title b {
+  color: #fff;
+  font-weight: 500;
+}
+.youget__action {
+  margin-top: 4.25rem;
+  text-align: center;
+}
 .btn-white {
   color: #6173f4;
   background-color: #ffffff;
@@ -729,6 +827,12 @@ fieldset[disabled] .btn-contrast.focus {
     margin-top: 0;
     margin-left: 15px;
   }
+  .youget__title {
+    font-size: 1.125rem;
+  }
+  .youget__action {
+    margin-top: 6.25rem;
+  }
   .btn {
     font-weight: 500;
     font-size: 17px;
@@ -776,6 +880,10 @@ fieldset[disabled] .btn-contrast.focus {
   }
   .result__inner {
     height: 342px;
+  }
+  .youget__title {
+    padding-left: 2.95rem;
+    padding-right: 2.95rem;
   }
 }
 @media (min-width: 1200px) {

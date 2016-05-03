@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -127,6 +127,7 @@
       </div>
     </div>
 
+    <!--
     <div class="result" id="result">
       
       <div class="container">
@@ -190,7 +191,6 @@
           </div>
         </div>
         
-        <!-- START / СЛАЙДЕР -->
         <div class="row result__slider visible-xs">
           <div class="swiper-container" id="result-slider">
             <div class="swiper-wrapper" id="result-slider-wrapper">
@@ -218,13 +218,68 @@
             </div>
           </div>
         </div>
-        <!-- END / СЛАЙДЕР -->
 
         <div class="result__action">
           <a href="#contacts" class="btn btn-white">ПРОВЕРИТЬ СВОЙ СЕРВИС</a>
           <br class="visible-xs">
           <a href="#" target="_blank" class="btn btn-trans">ВСЕ КЕЙСЫ</a>
         </div>          
+      </div>
+    </div>
+    -->
+    
+    <div class="youget" id="youget">
+      <div class="container">
+        <h2>Вы получите</h2>
+        
+        <div class="row youget__row hidden-xs">
+          <div class="col-sm-4 youget__item">
+            <div class="youget__inner youget__inner_cashback">
+              <div class="youget__title"><b>До 15%</b> недополученной прибыли вернется в&nbsp;компанию</div>
+            </div>
+          </div>
+          <div class="col-sm-4 youget__item">
+            <div class="youget__inner youget__inner_twotree">
+              <div class="youget__title"><b>2 из 3</b> трех любителей халявы&nbsp;станут вашими добросовестными клиентами</div>
+            </div>
+          </div>
+          <div class="col-sm-4 youget__item">
+            <div class="youget__inner youget__inner_boosting">
+              <div class="youget__title"><b>Существенно повысится</b> эффективность расходов на&nbsp;маркетинг</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- START / СЛАЙДЕР 2 -->
+        <div class="row youget__slider visible-xs">
+          <div class="swiper-container" id="youget-slider">
+            <div class="swiper-wrapper" id="youget-slider-wrapper">
+              <script id="youget-slider-template" type="text/template7">
+                {{#each slides}}
+                  <div class="swiper-slide">
+                    <div class="youget__inner youget__inner_{{logo}}">
+                      <div class="youget__title">{{title}}</div>
+                    </div>
+                  </div>
+                {{/each}}
+              </script>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-button-wrap">
+              <div class="swiper-button-inner">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END / СЛАЙДЕР 2 -->
+        
+        <div class="youget__action">
+          <a href="#contacts" class="btn btn-white">ПРОВЕРИТЬ СВОЙ СЕРВИС</a>
+        </div>
       </div>
     </div>
 
